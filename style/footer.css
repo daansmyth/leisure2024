@@ -1,0 +1,22 @@
+.rodape{
+    padding: 1em;
+}
+.rodape__conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.rodape__conteudo-link{
+    text-decoration: none;
+    color: gray;
+    font-size: 0.75em;
+    line-height: 2;
+}
+hr{
+    margin-top: 3em;
+}
+.rodape__conteudo-texto{
+    text-align: center;
+    color: gray;
+    font-size: 0.75em;
+}

@@ -1,0 +1,65 @@
+<div class="swiper">
+                <div class="swiper-wrapper">
+                <!-- Slides --> 
+                    <div class="swiper-slide">
+                        <ul class="time__conteudo__lista">
+                            <li class="time__conteudo__lista-item">
+                                <div class="time__card">
+                                    <div class="time__card__conteudo">
+                                        <img class="time__card__conteudo-imagem" src="./img/imagem/Danilo.jpg" alt="Foto do Danilo">
+                                        <h3 class="titulo__terciario">Danilo</h3>
+                                        <p class="time_card__conteudo-texto">Front-end / UX</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+
+            <!-- segundo -->
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                <!-- Slides --> 
+                    <div class="swiper-slide">
+                        <div class="time__card">
+                            <div class="time__card__conteudo">
+                                <img class="time__card__conteudo-imagem" src="./img/imagem/Danilo.jpg" alt="Foto do Danilo">
+                                <h3 class="titulo__terciario">Danilo</h3>
+                                <p class="time_card__conteudo-texto">Front-end / UX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="time__card">
+                            <div class="time__card__conteudo">
+                                <img class="time__card__conteudo-imagem" src="./img/imagem/Enzo.jpg" alt="Foto do Danilo">
+                                <h3 class="titulo__terciario">Danilo</h3>
+                                <p class="time_card__conteudo-texto">Front-end / UX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="time__card">
+                            <div class="time__card__conteudo">
+                                <img class="time__card__conteudo-imagem" src="./img/imagem/Esau.jpg" alt="Foto do Danilo">
+                                <h3 class="titulo__terciario">Danilo</h3>
+                                <p class="time_card__conteudo-texto">Front-end / UX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>

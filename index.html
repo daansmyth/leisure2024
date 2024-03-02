@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leisure</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FONTAWESOME 6.4.2 ICONS -->
+    <!-- <script src="https://kit.fontawesome.com/4c7894104f.js"></script> -->
+    <!-- <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d"> -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <div class="container_hamburguer">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <span class="container__rotulo">
+                        <i class="fa-light fa-bars fa-2xl"></i>
+                    </span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a class="container__link" href="#">Sobre</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="container__link" href="#">Serviços</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="container__link" href="#">Time</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="container__link" href="#">Anunciar</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="container__link" href="#">Contatos</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="container__link" href="#">Dúvidas</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="container__link" href="#">Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container__pesquisa">
+            <input class="container__pesquisa-barra" type="search" name="pesquisa" id="pesquisa" placeholder="Digite sua pesquisa">
+        </div>
+        <nav class="cabecalho__navegacao">
+            <span class="container__rotulo">
+                <i class="fa-light fa-circle-user fa-2xl"></i>
+            </span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carrossel">
+            <!-- <img class="carrossel__imagem" src="./img/anuncio/anuncio2.png" alt="banner de anuncio2"> -->
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./img/anuncio/anuncio1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/anuncio/anuncio2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/anuncio/anuncio3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/anuncio/anuncio4.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section class="destaques">
+            <div class="swiperDestaques">
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!-- <div class="card__imgem">
+                                <img src="./img/anuncio/card/card04.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p>Testando box</p>
+                            </div> -->
+                            <h3 class="card__titulo">Informações</h3>
+                            <img class="card__imagem" src="./img/anuncio/card/card04.png" alt="">
+                            <ul class="card__lista">
+                                <li class="card__lista-item">
+                                    
+                                        <p><i class="fa-light fa-brazilian-real-sign card__lista-icone"></i></p>
+                                    
+                                </li>
+                                <li class="card__lista-item">
+                                    
+                                        <p><i class="fa-light fa-bed card__lista-icone"></i></p>
+                                    
+                                </li>
+                                <li class="card__lista-item">
+                                    
+                                        <p><i class="fa-light fa-shower card__lista-icone"></i></p>
+                                    
+                                </li>
+                                <li class="card__lista-item">
+                                    
+                                        <p><i class="fa-light fa-circle-parking card__lista-icone"></i></p>
+                                    
+                                </li>
+                                <li class="card__lista-item">
+                                    
+                                        <p><i class="fa-sharp fa-light fa-location-dot card__lista-icone"></i></p>
+                                    
+                                </li>
+                            </ul>
+                            <!-- <span class="card__btn">
+                                <a class="btn__saiba-mais" href="#">Saiba mais</a>
+                            </span> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>   
+        </section>
+
+        <section class="procurados">
+            <ul class="procurados__lista">
+                <li class="procurados__lista-item">
+                    <img src="./img/anuncio/10OFF.png" alt="" class="procurados__lista-imagem">
+                </li>
+                <li class="procurados__lista-item">
+                    <img src="./img/anuncio/20OFF.png" alt="" class="procurados__lista-imagem">
+                </li>
+                <li class="procurados__lista-item">
+                    <img src="./img/anuncio/50OFF.png" alt="" class="procurados__lista-imagem">
+                </li>
+            </ul>
+        </section>
+
+        <section class="sobre">
+            <h2 class="titulo__secundario">Sobre a Leisure imóveis</h2>
+            <div class="sobre__conteudo">
+                <div class="sobre__container-imagem">
+                    <img class="sobre__imagem" src="./img/imagem/escritorio.png" alt="Imagem do escritório Leisure imóveis">
+                </div>
+                <ul class="sobre__conteudo__lista">
+                    <li class="sobre__conteudo__lista-item">
+                        <ul class="sobre__conteudo__lista">
+                            <li class="sobre__conteudo__lista-item">
+                                <h3 class="titulo__terciario">Compromisso</h3>
+                                <p class="sobre__conteudo__lista-texto">Na Leisuri Imóveis, estamos empenhados em ajudar você a encontrar o lar perfeito, onde possa criar memórias preciosas e viver momentos especiais.</p>
+                                <p class="sobre__conteudo__lista-texto">Somos o resultado de uma colaboração com a DEEM, uma empresa especializada no desenvolvimento de sites e aplicativos para terceiros.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sobre__conteudo__lista-item">
+                        <ul class="sobre__conteudo__lista">
+                            <li class="sobre__conteudo__lista-item">
+                                <h3 class="titulo__terciario">Nossa missão</h3>
+                                <p class="sobre__conteudo__lista-texto">Nossa missão é simplificar a busca por imóveis. Com um catálogo diversificado, que abrange desde apartamentos urbanos a casas espaçosas nos subúrbios, oferecemos opções para todos os estilos de vida e orçamentos.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sobre__conteudo__lista-item">
+                        <ul class="sobre__conteudo__lista">
+                            <li class="sobre__conteudo__lista-item">
+                                <h3 class="sobre__conteudo__lista-titulo">O que nos torna únicos</h3>
+                                <p class="sobre__conteudo__lista-texto">Na Leisuri Imóveis, nos destacamos pelo nosso comprometimento com a qualidade e a satisfação do cliente.</p>
+                                <ul class="sobre__conteudo__lista">
+                                    <li class="sobre__conteudo__lista-item lista-lista">
+                                        <p class="sobre__conteudo__lista-texto">
+                                            <i class="fa-light fa-check" style="color: #74C0FC;"></i>
+                                        </p>
+                                        <p class="sobre__conteudo__lista-texto">Tecnologias modernas</p>
+                                    </li>
+                                    <li class="sobre__conteudo__lista-item lista-lista">
+                                        <p class="sobre__conteudo__lista-texto">
+                                            <i class="fa-light fa-check" style="color: #74C0FC;"></i>
+                                        </p>
+                                        <p class="sobre__conteudo__lista-texto">Integração de dados</p>
+                                    </li>
+                                    <li class="sobre__conteudo__lista-item lista-lista">
+                                        <p class="sobre__conteudo__lista-texto">
+                                            <i class="fa-light fa-check" style="color: #74C0FC;"></i>
+                                        </p>
+                                        <p class="sobre__conteudo__lista-texto">Facilidade de acesso</p>
+                                    </li>
+                                    <li class="sobre__conteudo__lista-item lista-lista">
+                                        <p class="sobre__conteudo__lista-texto">
+                                            <i class="fa-light fa-check" style="color: #74C0FC;"></i>
+                                        </p>
+                                        <p class="sobre__conteudo__lista-texto">Selos de qualidade</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+        </section>
+
+        <section class="especialidade">
+            <h2 class="titulo__secundario">Nossas especialidades</h2>
+            <div class="especialidade__conteudo">
+                <ul class="especialidade__conteudo__lista">
+                    <li class="especialidade__conteudo__lista-item">
+                        <i class="fa-light fa-2xl fa-mobile-notch"></i>
+                        <h3 class="titulo__terciario">Aplicativos nativos</h3>
+                        <p class="especialidade__conteudo__lista-texto">Utilizamos o poder dos dispositivos móveis para melhor experiência, afinal estamos na era da tecnologia na palma da mão, podemos fazer nossas compras até do banheiro, não é mesmo? rsrs.</p>
+                    </li>
+                    <li class="especialidade__conteudo__lista-item">
+                        <i class="fa-light fa-2xl fa-cart-shopping"></i>
+                        <h3 class="titulo__terciario">E-commerce</h3>
+                        <p class="especialidade__conteudo__lista-texto">Nós trabalhamos fazendo uma conexão entre cliente e vendedor para melhor atende-los e também para que você não saia do conforto de sua casa tomando aquela água de coco ;)</p>
+                    </li>
+                    <li class="especialidade__conteudo__lista-item">
+                        <i class="fa-light fa-2xl fa-paintbrush"></i>
+                        <h3 class="titulo__terciario">Design Criativo</h3>
+                        <p class="especialidade__conteudo__lista-texto">Temos um design moderno, atraente e fácil de utilizar para você encontrar tudo o que precisa. Também pensamos naquelas pessoas que gostam de ver só as imagens nos livros, por isso temos bastante imagens ilustrando nosso conteúdo. *-*</p>
+                    </li>
+                    <li class="especialidade__conteudo__lista-item">
+                        <i class="fa-brands fa-2xl fa-google"></i>
+                        <h3 class="titulo__terciario">Expert em SEO</h3>
+                        <p class="especialidade__conteudo__lista-texto">Visibilidade e classificação em motores de busca garantindo maior alcance. Todo mundo quer ser top nos resultados de pesquisa. Hahaha.</p>
+                    </li>
+                    <li class="especialidade__conteudo__lista-item">
+                        <i class="fa-light fa-2xl fa-headset"></i>
+                        <h3 class="titulo__terciario">Suporte 24/7</h3>
+                        <p class="especialidade__conteudo__lista-texto">Para melhor atende-lo temos um suporte 24 horas por dia para ajudar com dúvidas ou até mesmo resolver aquele probleminha chato. =/</p>
+                    </li>
+                </ul>
+            </div>   
+        </section>
+
+        <section class="resposabilidade">
+            <div class="responsabilidade__conteudo">
+                <ul class="responsabilidade__conteudo__lista">
+                    <li class="responsabilidade__conteudo__lista-item">
+                        <i class="fa-light fa-2xl fa-face-smile-hearts fa-beat"></i>
+                        <h3 class="titulo__terciario">Satisfação</h3>
+                        <p class="responsabilidade__conteudo__lista-texto">Milhares de contratos assinados e clientes satisfeitos com o seu negócio.</p>
+                    </li>
+                    <li class="responsabilidade__conteudo__lista-item">
+                        <i class="fa-light fa-2xl fa-hand-holding-seedling fa-beat"></i>
+                        <h3 class="titulo__terciario">Sustentabilidade</h3>
+                        <p class="responsabilidade__conteudo__lista-texto">Além de contribuir com o meio ambiente, imóveis sustentáveis tem amis benefil com a gente.</p>
+                    </li>
+                    <li class="responsabilidade__conteudo__lista-item">
+                        <i class="fa-light fa-2xl fa-award fa-beat"></i>
+                        <h3 class="titulo__terciario">Qualidade garantida</h3>
+                        <p class="responsabilidade__conteudo__lista-texto">Garantimos a transparência, qualidade e preços conpativeis com o mercado para melhor atende-lo.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="time">
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="time__card">
+                            <img class="time__card-imagem" src="./img/imagem/Danilo.jpg" alt="Foto do Danilo">
+                            <div class="time__card__info">
+                                <h3 class="titulo__terciario">Danilo</h3>
+                                <p class="time_card__info-texto">Front-end / UX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="time__card">
+                            <img class="time__card-imagem" src="./img/imagem/Enzo.jpg" alt="Foto do Enzo">
+                            <div class="time__card__info">
+                                <h3 class="titulo__terciario">Enzo</h3>
+                                <p class="time_card__info-texto">Back-end / DBA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="time__card">
+                            <img class="time__card-imagem" src="./img/imagem/Esau.jpg" alt="Foto do Esau">
+                            <div class="time__card__info">
+                                <h3 class="titulo__terciario">Esau</h3>
+                                <p class="time_card__info-texto">Desenvolvedor / UX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="time__card">
+                            <img class="time__card-imagem" src="./img/imagem/marcelo.jpg" alt="Foto do Marcelo">
+                            <div class="time__card__info">
+                                <h3 class="titulo__terciario">Marcelo</h3>
+                                <p class="time_card__info-texto">Back-end / DBA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="time__card">
+                            <img class="time__card-imagem" src="./img/imagem/Marcos.jpeg" alt="Foto do Marcos">
+                            <div class="time__card__info">
+                                <h3 class="titulo__terciario">Marcos</h3>
+                                <p class="time_card__info-texto">Front-end / QA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="trabalhe">
+            <div class="trabalhe__conteudo">
+                <h3 class="titulo__terciario trabalhe__conteudo-titulo">Quer fazer parte da equipe?</h3>
+                <p class="trabalhe__conteudo-texto">Temos várias posições abertas, entre elas: Software Engineer, UI/UX Designer, Project Manager e mais.</p>
+                <p class="trabalhe__conteudo-texto">Clique no botão abaixo e confira os beneficios e as posições em aberto.</p>
+                <p class="trabalhe__conteudo-texto">Aqui você terá chance de trabalhar com as melhores tecnologias e os profissionais mais capacitados.</p>
+                <div class="trabalhe__conteudo__botao">
+                    <a class="trabalhe__conteudo__botao-link" href="#">Eu quero!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+            <ul class="rodape__conteudo-lista">
+                <h3 class="titulo__terciario">Sessões</h3>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Home</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Serviços</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Sobre</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Time</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Dúvidas</a>
+                </li>
+            </ul>
+            <ul class="rodape__conteudo-lista">
+                <h3 class="titulo__terciario">Categorias</h3>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Apartamentos</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Casas</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Sitios</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Terrenos</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Corretores</a>
+                </li>
+            </ul>
+            <ul class="rodape__conteudo-lista">
+                <h3 class="titulo__terciario">Contato</h3>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">E-mail</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">X</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">instagram</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Facebook</a>
+                </li>
+                <li class="rodape__conteudo-item">
+                    <a href="" class="rodape__conteudo-link">Whatsapp</a>
+                </li>
+            </ul>
+        </div>
+        <hr/>
+        <p class="rodape__conteudo-texto">&copy 2024 DEEM Apps. Development.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/main.js"></script>
+</body>
+</html>
