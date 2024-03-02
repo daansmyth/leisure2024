@@ -9,6 +9,7 @@
 @import url('time.css');
 @import url('trabalhe.css');
 @import url('footer.css');
+@import url('premium.css');
 
 :root{
 	--font-principal: "Montserrat", sans-serif;

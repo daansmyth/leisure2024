@@ -30,7 +30,13 @@
     margin-top: 16px;
     z-index: 2;
 }
-
+.lista-menu__titulo{
+    font-weight: 700;
+    margin: 1em 0 0.25em 0;
+}
+.lista-menu__titulo i{
+    margin-left: 0.5em;
+}
 .lista-menu__titulo, .lista-menu__item{
     padding: 0.5em 1em;
     font-size: 0.75em;
@@ -41,6 +47,9 @@
 .container__link{
     text-decoration: none;
     color: var(--cor-font-principal);
+}
+.container__link i{
+    margin-left: 0.5em;
 }
 .container__pesquisa-barra{
     width: 60vw;
