@@ -191,186 +191,235 @@ document.body.onload = function menuPerfil(){
 	}
 }
 
-var form1 = document.querySelector('#form1')
-var form2 = document.querySelector('#form2')
-var form3 = document.querySelector('#form3')
-var form4 = document.querySelector('#form4')
-var form5 = document.querySelector('#form5')
-var form6 = document.querySelector('#form6')
-var form7 = document.querySelector('#form7')
-var form8 = document.querySelector('#form8')
-var form9 = document.querySelector('#form9')
-var form10 = document.querySelector('#form10')
-var form11 = document.querySelector('#form11')
-var form12 = document.querySelector('#form12')
-var form13 = document.querySelector('#form13')
+// NOVA FUNCAO DE PROXIMO/ANTERIOR
 
-var proximo1 = document.querySelector('.proximo1');
+const listaBtnAnterior = document.querySelectorAll('.anunciar__conteudo__botao-anterior');
+const listaBtnProximo = document.querySelectorAll('.anunciar__conteudo__botao-proximo');
+const formBox = document.querySelectorAll('.anunciar__conteudo__box');
+// const form1 = document.querySelector('#form1')
+// const form2 = document.querySelector('#form2')
+var i = 0;
 
-var anterior1 = document.querySelector('.anterior1');
-var proximo2 = document.querySelector('.proximo2');
 
-var anterior2 = document.querySelector('.anterior2');
-var proximo3 = document.querySelector('.proximo3');
+listaBtnProximo.forEach(function (botao){
+	botao.addEventListener('click', function (){
+		const index = Array.from(listaBtnProximo).indexOf(this);
+		console.log('botao', index);
+		i = index;
+		function proximoForm (){
+			formBox[i].style.left = '-450px';
+			i = i+1;
+			formBox[i].style.left = '40px';
+			barra.style.width = '240px';
+		}		
+		if(index == i){
+			proximoForm();
+		}
+	})
+})
+listaBtnAnterior.forEach(function (botao){
+	botao.addEventListener('click', function (){
+		const index = Array.from(listaBtnAnterior).indexOf(this);
+		i = index;
+		console.log('botao', i);
+		
+		function anteriorForm (){
+			i =  i-1;
+			console.log('teste', i);
+			formBox[i].style.left = '40px';
+			// i = i+1;
+			i = index;
+			formBox[i].style.left = '450px';
+			// form1.style.left = '40px';
+			// form2.style.left = '450px';
+			barra.style.width = '120px';
+		}
+		if(index){
+			anteriorForm();
+		}
+	})
+})
 
-var anterior3 = document.querySelector('.anterior3');
-var proximo4 = document.querySelector('.proximo4');
+// var form1 = document.querySelector('#form1')
+// var form2 = document.querySelector('#form2')
+// var form3 = document.querySelector('#form3')
+// var form4 = document.querySelector('#form4')
+// var form5 = document.querySelector('#form5')
+// var form6 = document.querySelector('#form6')
+// var form7 = document.querySelector('#form7')
+// var form8 = document.querySelector('#form8')
+// var form9 = document.querySelector('#form9')
+// var form10 = document.querySelector('#form10')
+// var form11 = document.querySelector('#form11')
+// var form12 = document.querySelector('#form12')
+// var form13 = document.querySelector('#form13')
 
-var anterior4 = document.querySelector('.anterior4');
-var proximo5 = document.querySelector('.proximo5');
+// var proximo1 = document.querySelector('.proximo1');
 
-var anterior5 = document.querySelector('.anterior5');
-var proximo6 = document.querySelector('.proximo6');
+// var anterior1 = document.querySelector('.anterior1');
+// var proximo2 = document.querySelector('.proximo2');
 
-var anterior6 = document.querySelector('.anterior6');
-var proximo7 = document.querySelector('.proximo7');
+// var anterior2 = document.querySelector('.anterior2');
+// var proximo3 = document.querySelector('.proximo3');
 
-var anterior7 = document.querySelector('.anterior7');
-var proximo8 = document.querySelector('.proximo8');
+// var anterior3 = document.querySelector('.anterior3');
+// var proximo4 = document.querySelector('.proximo4');
 
-var anterior8 = document.querySelector('.anterior8');
-var proximo9 = document.querySelector('.proximo9');
+// var anterior4 = document.querySelector('.anterior4');
+// var proximo5 = document.querySelector('.proximo5');
 
-var anterior9 = document.querySelector('.anterior9');
-var proximo10 = document.querySelector('.proximo10');
+// var anterior5 = document.querySelector('.anterior5');
+// var proximo6 = document.querySelector('.proximo6');
 
-var anterior10 = document.querySelector('.anterior10');
-var proximo11 = document.querySelector('.proximo11');
+// var anterior6 = document.querySelector('.anterior6');
+// var proximo7 = document.querySelector('.proximo7');
 
-var anterior11 = document.querySelector('.anterior11');
-var proximo12 = document.querySelector('.proximo12');
+// var anterior7 = document.querySelector('.anterior7');
+// var proximo8 = document.querySelector('.proximo8');
 
-var anterior12 = document.querySelector('.anterior12');
-var proximo13 = document.querySelector('.proximo13');
+// var anterior8 = document.querySelector('.anterior8');
+// var proximo9 = document.querySelector('.proximo9');
+
+// var anterior9 = document.querySelector('.anterior9');
+// var proximo10 = document.querySelector('.proximo10');
+
+// var anterior10 = document.querySelector('.anterior10');
+// var proximo11 = document.querySelector('.proximo11');
+
+// var anterior11 = document.querySelector('.anterior11');
+// var proximo12 = document.querySelector('.proximo12');
+
+// var anterior12 = document.querySelector('.anterior12');
+// var proximo13 = document.querySelector('.proximo13');
 
 var barra = document.querySelector('.anunciar__conteudo__progresso-barra')
 
-proximo1.onclick = function (){
-	form1.style.left = '-450px';
-	form2.style.left = '40px';
-	// barra.style.width = '240px'
-}
+// proximo1.onclick = function (){
+// 	form1.style.left = '-450px';
+// 	form2.style.left = '40px';
+// 	// barra.style.width = '240px'
+// }
 
 
-anterior1.onclick = function (){
-	form1.style.left = '40px';
-	form2.style.left = '450px';
-	barra.style.width = '120px'
-}
+// anterior1.onclick = function (){
+// 	form1.style.left = '40px';
+// 	form2.style.left = '450px';
+// 	barra.style.width = '120px'
+// }
 
-proximo2.onclick = function (){
-	form2.style.left = '-450px';
-	form3.style.left = '40px';
+// proximo2.onclick = function (){
+// 	form2.style.left = '-450px';
+// 	form3.style.left = '40px';
 	
-}
+// }
 
-anterior2.onclick = function (){
-	form2.style.left = '40px';
-	form3.style.left = '450px';
-}
+// anterior2.onclick = function (){
+// 	form2.style.left = '40px';
+// 	form3.style.left = '450px';
+// }
 
 
-proximo3.onclick = function (){
-	form3.style.left = '-450px';
-	form4.style.left = '40px';
-	barra.style.width = '240px'
-}
+// proximo3.onclick = function (){
+// 	form3.style.left = '-450px';
+// 	form4.style.left = '40px';
+// 	barra.style.width = '240px'
+// }
 
-anterior3.onclick = function (){
-	form3.style.left = '40px';
-	form4.style.left = '450px';
-	barra.style.width = '120px'
-}
+// anterior3.onclick = function (){
+// 	form3.style.left = '40px';
+// 	form4.style.left = '450px';
+// 	barra.style.width = '120px'
+// }
 
-proximo4.onclick = function (){
-	form4.style.left = '-450px';
-	form5.style.left = '40px';
+// proximo4.onclick = function (){
+// 	form4.style.left = '-450px';
+// 	form5.style.left = '40px';
 
-}
-anterior4.onclick = function (){
-	form4.style.left = '40px';
-	form5.style.left = '450px';
+// }
+// anterior4.onclick = function (){
+// 	form4.style.left = '40px';
+// 	form5.style.left = '450px';
 
-}
+// }
 
-proximo5.onclick = function (){
-	form5.style.left = '-450px';
-	form6.style.left = '40px';
+// proximo5.onclick = function (){
+// 	form5.style.left = '-450px';
+// 	form6.style.left = '40px';
 
-}
+// }
 
-anterior5.onclick = function (){
-	form5.style.left = '40px';
-	form6.style.left = '450px';
+// anterior5.onclick = function (){
+// 	form5.style.left = '40px';
+// 	form6.style.left = '450px';
 
-}
+// }
 
-proximo6.onclick = function (){
-	form6.style.left = '-450px';
-	form7.style.left = '40px';
+// proximo6.onclick = function (){
+// 	form6.style.left = '-450px';
+// 	form7.style.left = '40px';
 
-}
+// }
 
-anterior6.onclick = function (){
-	form6.style.left = '40px';
-	form7.style.left = '450px';
+// anterior6.onclick = function (){
+// 	form6.style.left = '40px';
+// 	form7.style.left = '450px';
 
-}
+// }
 
-proximo7.onclick = function (){
-	form7.style.left = '-450px';
-	form8.style.left = '40px';
+// proximo7.onclick = function (){
+// 	form7.style.left = '-450px';
+// 	form8.style.left = '40px';
 
-}
+// }
 
-anterior7.onclick = function (){
-	form7.style.left = '40px';
-	form8.style.left = '450px';
+// anterior7.onclick = function (){
+// 	form7.style.left = '40px';
+// 	form8.style.left = '450px';
 
-}
+// }
 
-proximo8.onclick = function (){
-	form8.style.left = '-450px';
-	form9.style.left = '40px';
+// proximo8.onclick = function (){
+// 	form8.style.left = '-450px';
+// 	form9.style.left = '40px';
 
-}
+// }
 
-anterior8.onclick = function (){
-	form8.style.left = '40px';
-	form9.style.left = '450px';
+// anterior8.onclick = function (){
+// 	form8.style.left = '40px';
+// 	form9.style.left = '450px';
 
-}
+// }
 
-proximo9.onclick = function (){
-	form9.style.left = '-450px';
-	form10.style.left = '40px';
+// proximo9.onclick = function (){
+// 	form9.style.left = '-450px';
+// 	form10.style.left = '40px';
 
-}
+// }
 
-anterior9.onclick = function (){
-	form9.style.left = '40px';
-	form10.style.left = '450px';
+// anterior9.onclick = function (){
+// 	form9.style.left = '40px';
+// 	form10.style.left = '450px';
 
-}
+// }
 
-proximo10.onclick = function (){
-	form10.style.left = '-450px';
-	form11.style.left = '40px';
-}
+// proximo10.onclick = function (){
+// 	form10.style.left = '-450px';
+// 	form11.style.left = '40px';
+// }
 
-anterior10.onclick = function (){
-	form10.style.left = '40px';
-	form11.style.left = '450px';
-}
+// anterior10.onclick = function (){
+// 	form10.style.left = '40px';
+// 	form11.style.left = '450px';
+// }
 
-proximo11.onclick = function (){
-	form11.style.left = '-450px';
-	form12.style.left = '40px';
-	barra.style.width = '360px'
-}
+// proximo11.onclick = function (){
+// 	form11.style.left = '-450px';
+// 	form12.style.left = '40px';
+// 	barra.style.width = '360px'
+// }
 
-anterior11.onclick = function (){
-	form11.style.left = '40px';
-	form12.style.left = '450px';
-	barra.style.width = '240px'
-}
+// anterior11.onclick = function (){
+// 	form11.style.left = '40px';
+// 	form12.style.left = '450px';
+// 	barra.style.width = '240px'
+// }

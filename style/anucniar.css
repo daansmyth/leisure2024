@@ -53,6 +53,9 @@
     background: var(--cor-font-destaque);
     color: white;
 }
+.disable{
+    display: none;
+}
 .anunciar__conteudo__botao-proximo{
     width: 110px;
     height: 35px;
