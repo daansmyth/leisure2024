@@ -1,0 +1,103 @@
+.anunciar__conteudo{
+    width: 360px;
+    height: 600px;
+    margin: 8% auto;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cadastro{
+    text-align: center;
+}
+.anunciar__conteudo__box{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+}
+.anunciar__conteudo__selecao, .anunciar__conteudo__input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid black;
+    background: transparent;
+}
+.descricao{
+    /* width: 280px; */
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.anunciar__conteudo__selecao, .anunciar__conteudo__input:focus{
+    outline: 0;
+}
+.anunciar__conteudo__botao{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+.anunciar__conteudo__botao-anterior{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: var(--cor-font-destaque);
+    color: white;
+}
+.anunciar__conteudo__botao-proximo{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: var(--cor-font-destaque);
+    color: white;
+}
+
+#form2, #form3, #form4, #form5, #form6, #form7, #form8, #form9, #form10, #form11, #form12, #form13{
+    left: 450px;
+}
+.anunciar__conteudo__progresso-barra{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: var(--cor-barra-progresso);
+    transition: 0.5s;
+}
+.anunciar__conteudo__progresso-barra::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #00FF00;
+}
+.anunciar__conteudo__progresso-linha{
+    display: flex;
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+.anunciar__conteudo__progresso-coluna{
+    width: 120px;
+    text-align: center;
+    position: relative;
+
+}

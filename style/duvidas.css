@@ -15,8 +15,5 @@
     line-height: 1.5;
 }
 .duvidas__container__imagem-conteudo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
 }

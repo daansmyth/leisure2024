@@ -11,12 +11,14 @@
 @import url('footer.css');
 @import url('premium.css');
 @import url('duvidas.css');
+@import url('anucniar.css');
 
 :root{
 	--font-principal: "Montserrat", sans-serif;
 	--cor-font-principal: #363636;
 	--cor-font-destaque: rgb(30, 144, 255);
 	/* --cor-background-destaque: linear-gradient(to bottom, #ededed, #FFFFFF); */
+	--cor-barra-progresso: linear-gradient(to right, #1E90FF, #00FF00);
 	--cor-background-destaque: #ededed;
 }
 
