@@ -174,9 +174,8 @@
                 </div>
                 <div id="form9" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">Agora precisamos do endereço</h3>
-
                     <!-- VIA CEP -->
-                    <form method="get" action=".">
+                    <!-- <form method="get" action=".">
                         <div class="dados__container__conteudo">
                             <label class="anunciar__conteudo-titulo">Cep:</label>
                             <input class="anunciar__conteudo__input" name="cep" type="text" id="cep" value="" maxlength="9" onblur="pesquisacep(this.value);" />
@@ -201,13 +200,13 @@
                             <label class="anunciar__conteudo-titulo">Estado:</label>
                             <input class="anunciar__conteudo__input" name="uf" type="text" id="uf" disabled/>
                         </div>
-                    </form>
+                    </form> -->
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior8" type="button">Anterior</button>
                         <button class="anunciar__conteudo__botao-proximo proximo9" type="button">Próximo</button>
                     </div>
                 </div>
-                <div id="form10" class="anunciar__conteudo__box" >
+                <div id="form10" class="anunciar__conteudo__box">
                     <h3 class="titulo__terciario">Estamos nos ultimos passos</h3>
                     <label class="anunciar__conteudo-titulo" for="anuciarDescricao">Fale mais sobre o imóvel que deseja anunciar</label>
                     <textarea class="anunciar__conteudo__input descricao" name="descricao" id="anuciarDescricao" cols="30" rows="10" placeholder="digite detalhes sobre seu imóvel que seja relevante para a sua venda."></textarea>
@@ -218,8 +217,8 @@
                 </div>
                 <div id="form11" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">Valor</h3>
-                    <label class="anunciar__conteudo-titulo" for="anunciarValor">Digite o valor que deseja vender seu imóvel</label>
-                    <input class="anunciar__conteudo__input" type="text" name="valor" id="anunciarValor" placeholder="200000,00">
+                    <label class="anunciar__conteudo-titulo">Digite o valor que deseja vender seu imóvel</label>
+                    <input class="anunciar__conteudo__input" type="text" name="valor" placeholder="200000,00">
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior10" type="button">Anterior</button>
                         <button class="anunciar__conteudo__botao-proximo proximo11" type="button">Próximo</button>
@@ -242,8 +241,7 @@
                             <span>Concluir</span>
                         </button>
                     </div>
-                </div>
-                
+                </div>   
             </form>
         </section>
         
@@ -314,57 +312,57 @@
         </section>
 
         <!---------------------------- MEUS DADOS ---------------------------->
-        <section class="dados hidden">
-            <div class="dados__imagem">
-                <label for="dadosImagem"></label>
+        <section class="meusdados hidden">
+            <div class="meusdados__imagem">
+                <label for="meusdadosImagem"></label>
                 <span>Alterar imagem</span>
-                <input type="file" name="foto" id="dadosImagem">
+                <input type="file" name="foto" id="meusdadosImagem">
             </div>
-            <form class="dados__container">
-                <div class="dados__container__conteudo">
-                    <label for="dadosNome">Nome completo:</label>
-                    <input type="text" name="nome" id="dadosNome">
+            <form class="meusdados__container">
+                <div class="meusdados__container__conteudo">
+                    <label for="meusdadosNome">Nome completo:</label>
+                    <input type="text" name="nome" id="meusdadosNome">
                 </div>
-                <div class="dados__container__conteudo">
-                    <label for="dadosData">Data de nascimento:</label>
-                    <input type="date" name="data" id="dadosData">
+                <div class="meusdados__container__conteudo">
+                    <label for="meusdadosData">Data de nascimento:</label>
+                    <input type="date" name="data" id="meusdadosData">
                 </div>
-                <div class="dados__container__conteudo">
-                    <label for="dadosEmail">E-mail:</label>
-                    <input type="email" name="email" id="dadosEmail">
+                <div class="meusdados__container__conteudo">
+                    <label for="meusdadosEmail">E-mail:</label>
+                    <input type="email" name="email" id="meusdadosEmail">
                 </div>
-                <div class="dados__container__conteudo">
-                    <label for="dadosSenha">Senha:</label>
-                    <input type="password" name="senha" id="dadosSenha">
+                <div class="meusdados__container__conteudo">
+                    <label for="meusdadosSenha">Senha:</label>
+                    <input type="password" name="senha" id="meusdadosSenha">
                 </div>
-                <div class="dados__container__conteudo">
+                <div class="meusdados__container__conteudo">
                     <label for="dadoTelefone">Telefone:</label>
                     <input type="tel" name="telefone" id="dadoTelefone">
                 </div>
-                <div class="dados__container__conteudo">
-                    <label for="dadosCpf">CPF</label>
-                    <input type="password" name="cpf" id="dadosCpf">
+                <div class="meusdados__container__conteudo">
+                    <label for="meusdadosCpf">CPF</label>
+                    <input type="password" name="cpf" id="meusdadosCpf">
                 </div>
 
-                <div class="dados__container__conteudo">
+                <div class="meusdados__container__conteudo">
                     <label>Cep:</label>
-                    <input name="cep" type="text" id="dadosCep" value="" maxlength="9" onblur="pesquisacep(this.value);" />
+                    <input name="cep" type="text" id="meusdadosCep" value="" maxlength="9" onblur="pesquisacep(this.value);" />
                 </div>
-                <div class="dados__container__conteudo">
+                <div class="meusdados__container__conteudo">
                     <label>Rua:</label>
-                    <input name="rua" type="text" id="dadosRua"  />
+                    <input name="rua" type="text" id="meusdadosRua"  />
                 </div>
-                <div class="dados__container__conteudo">
+                <div class="meusdados__container__conteudo">
                     <label>Bairro:</label>
-                    <input name="bairro" type="text" id="dadosBairro"  />
+                    <input name="bairro" type="text" id="meusdadosBairro"  />
                 </div>
-                <div class="dados__container__conteudo">
+                <div class="meusdados__container__conteudo">
                     <label>Cidade:</label>
-                    <input name="cidade" type="text" id="dadosCidade"  />
+                    <input name="cidade" type="text" id="meusdadosCidade"  />
                 </div>
-                <div class="dados__container__conteudo">
+                <div class="meusdados__container__conteudo">
                     <label>Estado:</label>
-                    <input name="uf" type="text" id="dadosUf" />
+                    <input name="uf" type="text" id="meusdadosUf" />
                 </div>
             </form>
         </section>

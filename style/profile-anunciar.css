@@ -1,9 +1,7 @@
 .anunciar{
-    overflow: hidden;
     height: auto;
 }
 .anunciar__conteudo{
-    
     width: 360px;
     height: 600px;
     margin: 8% auto;
@@ -27,10 +25,11 @@
 }
 .anunciar__conteudo__selecao, .anunciar__conteudo__input{
     width: 100%;
-    padding: 5px 5px;
+    padding: 10px 5px;
     margin: 5px 0;
     border: 0;
     border-bottom: 1px solid lightgray;
+    outline: none;
     background: transparent;
 }
 .descricao{
@@ -41,7 +40,7 @@
     flex-wrap: wrap;
 }
 
-.anunciar__conteudo__selecao, .anunciar__conteudo__input:focus{
+.anunciar__conteudo__selecao:focus, .anunciar__conteudo__input:focus{
     outline: 0;
 }
 .anunciar__conteudo__botao{

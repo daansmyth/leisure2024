@@ -1,7 +1,7 @@
-.dados{
+.meusdados{
     padding: 1em 2em;
 }
-.dados__imagem{
+.meusdados__imagem{
     text-align: center;
     margin: 3em 0;
     display: flex;
@@ -11,7 +11,7 @@
     row-gap: 2em;
     font-family: var(--font-principal);
 }
-.dados__imagem label{
+.meusdados__imagem label{
     box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     background-size: cover;
@@ -20,21 +20,21 @@
     width: 200px;
     height: 200px;
 }
-.dados__imagem input{
+.meusdados__imagem input{
     margin: 2em 0;
     display: none;
 }
-.dados__container__conteudo{
+.meusdados__container__conteudo{
     margin: em 0;
     display: flex;
     flex-direction: column;
 }
-.dados__container__conteudo input{
+.meusdados__container__conteudo input{
     font-family: var(--font-principal);
     border: none;
     border-bottom: 1px solid lightgray;
     margin: 2em 0;
 }
-.dados__container__conteudo input:focus{
+.meusdados__container__conteudo input:focus{
     outline: 0;
 }

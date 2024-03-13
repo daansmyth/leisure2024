@@ -13,7 +13,7 @@
 @import url('duvidas.css');
 @import url('profile-anunciar.css');
 @import url('profile-anuncio.css');
-@import url('profile-dados.css');
+@import url('profile-meusdados.css');
 
 :root{
 	--font-principal: "Montserrat", sans-serif;

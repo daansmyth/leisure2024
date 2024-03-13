@@ -3,7 +3,7 @@ const btnMeusAnuncios = document.querySelector('.btnMeusAnuncios');
 const frameAnunciar = document.querySelector('.anunciar')
 const btnAnunciar = document.querySelector('.btnAnunciar');
 const notCheckedBox = document.querySelector('#menu');
-const frameDados = document.querySelector('.dados');
+const frameDados = document.querySelector('.meusdados');
 const btnMeusDados = document.querySelector('.btnMeusDados');
 
 
