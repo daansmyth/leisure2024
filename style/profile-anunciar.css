@@ -1,4 +1,9 @@
+.anunciar{
+    overflow: hidden;
+    height: auto;
+}
 .anunciar__conteudo{
+    
     width: 360px;
     height: 600px;
     margin: 8% auto;
@@ -17,16 +22,18 @@
     left: 40px;
     transition: 0.5s;
 }
+.dados__container__conteudo{
+    width: 100%;
+}
 .anunciar__conteudo__selecao, .anunciar__conteudo__input{
     width: 100%;
-    padding: 10px 5px;
+    padding: 5px 5px;
     margin: 5px 0;
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
     background: transparent;
 }
 .descricao{
-    /* width: 280px; */
     height: 200px;
     border: 1px solid gray;
     border-radius: 10px;
@@ -67,6 +74,15 @@
     background: var(--cor-font-destaque);
     color: white;
 }
+.anunciar__conteudo__box__imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.anunciar__conteudo__box__imagem img{
+    width: 100%;
+}
 
 #form2, #form3, #form4, #form5, #form6, #form7, #form8, #form9, #form10, #form11, #form12, #form13{
     left: 450px;
@@ -74,7 +90,7 @@
 .anunciar__conteudo__progresso-barra{
     position: absolute;
     height: 100%;
-    width: 120px;
+    width: 0;
     background: var(--cor-barra-progresso);
     transition: 0.5s;
 }
@@ -95,7 +111,7 @@
     height: 40px;
     margin: 0 auto;
     align-items: center;
-    box-shadow: 0 -1px 5px -1px #000;
+    /* box-shadow: 0 -1px 5px -1px #000; */
     position: relative;
 }
 .anunciar__conteudo__progresso-coluna{
@@ -103,4 +119,13 @@
     text-align: center;
     position: relative;
 
+}
+
+.anunciar__conteudo__botao button[type="submit"]{
+    width: auto;
+    border: none;
+    color: white;
+    background: var(--cor-font-destaque);
+    padding: 0.75em 2em;
+    border-radius: 5px;
 }

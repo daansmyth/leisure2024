@@ -11,7 +11,9 @@
 @import url('footer.css');
 @import url('premium.css');
 @import url('duvidas.css');
-@import url('anucniar.css');
+@import url('profile-anunciar.css');
+@import url('profile-anuncio.css');
+@import url('profile-dados.css');
 
 :root{
 	--font-principal: "Montserrat", sans-serif;
