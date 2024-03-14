@@ -45,22 +45,40 @@
 					<li class="lista-menu__item">
 						<a class="container__link" href="index.html">Home</a>
 					</li>
-					<li class="lista-menu__titulo">Meu perfil</li>
+					<!-- <li class="lista-menu__item btnCategorias">
+                        <span>Meu perfil</span>
+                    </li> -->
 					<li class="lista-menu__item">
 						<a class="container__link btnAnunciar" href="#">Anunciar</a>
 					</li>
 					<li class="lista-menu__item btnMeusAnuncios">
-						<!-- <a class="container__link" href="#">Meus Anúncios</a> -->
 						<span>Meus Anuncios</span>
 					</li>
 					<li class="lista-menu__item">
 						<a class="container__link btnMeusDados" href="#">Meus Dados</a>
 					</li>
+                    <li class="lista-menu__item btn-download">
+                        <span>Nosso App</span>
+                        <span>
+                            <i class="arrow-replace-download fa-solid fa-sm fa-chevron-right"></i>
+                        </span>
+                        <ul class="lista-menu__sublista-download hidden">
+                            <li class="lista-menu__sublista-item">
+                                <a href="https://play.google.com/store/apps" target="_blank">
+                                    <span>Google play</span>
+                                    <i class="fa-brands fa-google-play"></i>
+                                </a>
+                            </li>
+                            <li class="lista-menu__sublista-item">
+                                <a href="https://www.apple.com/br/store" target="_blank">
+                                    <span>Apple store</span>
+                                    <i class="fa-brands fa-apple fa-lg"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 					<li class="lista-menu__item">
 						<a class="container__link" href="#">Sair</a>
-					</li>
-					<li class="lista-menu__item">
-						<a class="container__link" href="#">Download<i class="fa-light fa-sm fa-chevron-right"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -86,8 +104,11 @@
                     <div class="anunciar__conteudo__progresso-coluna">Finalizando Anucnio</div>
                 </div>
                 <div id="form1" class="anunciar__conteudo__box" >
-                    <h3 class="titulo__terciario cadastro">tipo</h3>
-                    <label class="anunciar__conteudo-titulo" for="imovelTipo">Qual é o tipo de imóvel que você deseja anunciar?</label>
+                    <h3 class="titulo__terciario">tipo</h3>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-house-building"></i>
+                    </div>
+                    <p>Qual é o tipo de imóvel que você deseja anunciar?</p>
                     <select class="anunciar__conteudo__selecao" name="imovelTipo" id="imovelTipo">
                         <option class="anunciar__conteudo__selecao-opcao" value="apartamento">Apartamento</option>
                         <option class="anunciar__conteudo__selecao-opcao" value="casa">Casa</option>
@@ -101,7 +122,10 @@
     
                 <div id="form2" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">Localidade</h3>
-                    <label class="anunciar__conteudo-titulo" for="imovelLocal">Em qual área o seu imóvel está situado?</label>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-face-thinking"></i>
+                    </div>
+                    <p>Em qual área o seu imóvel está situado?</p>
                     <select class="anunciar__conteudo__selecao" name="imovelLocal" id="imovelLocal">
                         <option class="anunciar__conteudo__selecao-opcao" value="areaLivre">Área livre</option>
                         <option class="anunciar__conteudo__selecao-opcao" value="condominio">Condominio</option>
@@ -115,7 +139,10 @@
                 </div>
                 <div id="form3" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">Sustentabilidade</h3>
-                    <label class="anunciar__conteudo-titulo" for="imovelSustentavel">O imóvel possui algum tipo de recurso sustentável?</label>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-seedling"></i>
+                    </div>
+                    <p>O imóvel possui algum tipo de recurso sustentável?</p>
                     <select class="anunciar__conteudo__selecao" name="imovelSustentavel" id="imovelSustentavel">
                         <option class="anunciar__conteudo__selecao-opcao" value="solar">Energia solar</option>
                         <option class="anunciar__conteudo__selecao-opcao" value="chuva">Captação água da chuva</option>
@@ -131,7 +158,10 @@
                 </div>
                 <div id="form4" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">sobre o imóvel</h3>
-                    <label class="anunciar__conteudo-titulo" for="anunciarQuarto">Quantos quartos o imóvel possui?</label>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-bed"></i>
+                    </div>
+                    <p>Quantos quartos o imóvel possui?</p>
                     <input class="anunciar__conteudo__input" type="number" name="quarto" id="anunciarQuarto">
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior3" type="button">Anterior</button>
@@ -140,7 +170,10 @@
                 </div>
                 <div id="form5" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">sobre o imóvel</h3>
-                    <label class="anunciar__conteudo-titulo" for="anunciarSala">Quantas salas o imóvel possui?</label>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-couch"></i>
+                    </div>
+                    <p>Quantas salas o imóvel possui?</p>
                     <input class="anunciar__conteudo__input" type="number" name="sala" id="anunciarSala">
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior4" type="button">Anterior</button>
@@ -149,7 +182,10 @@
                 </div>
                 <div id="form6" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">sobre o imóvel</h3>
-                    <label class="anunciar__conteudo-titulo" for="anunciarBanheiro">Quantos banheiros o imóvel possui?</label>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-shower"></i>
+                    </div>
+                    <p>Quantos banheiros o imóvel possui?</p>
                     <input class="anunciar__conteudo__input" type="number" name="banheiro" id="anunciarBanheiro">
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior5" type="button">Anterior</button>
@@ -158,7 +194,10 @@
                 </div>
                 <div id="form7" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">sobre o imóvel</h3>
-                    <label class="anunciar__conteudo-titulo" for="anunciarVaga">Quantas vagas de garagem imóvel possui?</label>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-garage-car"></i>
+                    </div>
+                    <p>Quantas vagas de garagem imóvel possui?</p>
                     <input class="anunciar__conteudo__input" type="number" name="vaga" id="anunciarVaga">
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior6" type="button">Anterior</button>
@@ -167,6 +206,9 @@
                 </div>
                 <div id="form8" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">Estamos quase terminando...</h3>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-face-laugh-squint"></i>
+                    </div>
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior7" type="button">Anterior</button>
                         <button class="anunciar__conteudo__botao-proximo proximo8" type="button">Próximo</button>
@@ -174,30 +216,31 @@
                 </div>
                 <div id="form9" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">Agora precisamos do endereço</h3>
+                    <!-- <i class="fa-thin fa-location-dot"></i> -->
                     <!-- VIA CEP -->
                     <!-- <form method="get" action="."> -->
                         <div class="dados__container__conteudo">
-                            <label class="anunciar__conteudo-titulo">Cep:</label>
+                            <span>Cep</span>
                             <input class="anunciar__conteudo__input" name="cep" type="text" id="cep" value="" maxlength="9" onblur="pesquisacep(this.value);" />
                         </div>
                         <div class="dados__container__conteudo">
-                            <label class="anunciar__conteudo-titulo">Rua:</label>
+                            <span>Rua</span>
                             <input class="anunciar__conteudo__input" name="rua" type="text" id="rua" disabled />
                         </div>
                         <div class="dados__container__conteudo">
-                            <label class="anunciar__conteudo-titulo">Número:</label>
+                            <span>Número</span>
                             <input class="anunciar__conteudo__input" name="numero" type="text" id="anunciarNumero"/>
                         </div>
                         <div class="dados__container__conteudo">
-                            <label class="anunciar__conteudo-titulo">Bairro:</label>
+                            <span>Bairro</span>
                             <input class="anunciar__conteudo__input" name="bairro" type="text" id="bairro"  disabled/>
                         </div>
                         <div class="dados__container__conteudo">
-                            <label class="anunciar__conteudo-titulo">Cidade:</label>
+                            <span>Cidade</span>
                             <input class="anunciar__conteudo__input" name="cidade" type="text" id="cidade"  disabled/>
                         </div>
                         <div class="dados__container__conteudo">
-                            <label class="anunciar__conteudo-titulo">Estado:</label>
+                            <span>Estado</span>
                             <input class="anunciar__conteudo__input" name="uf" type="text" id="uf" disabled/>
                         </div>
                     <!-- </form> -->
@@ -208,7 +251,10 @@
                 </div>
                 <div id="form10" class="anunciar__conteudo__box">
                     <h3 class="titulo__terciario">Estamos nos ultimos passos</h3>
-                    <label class="anunciar__conteudo-titulo" for="anuciarDescricao">Fale mais sobre o imóvel que deseja anunciar</label>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-bullhorn"></i>
+                    </div>
+                    <p>Fale mais sobre o imóvel que deseja anunciar</p>
                     <textarea class="anunciar__conteudo__input descricao" name="descricao" id="anuciarDescricao" cols="30" rows="10" placeholder="digite detalhes sobre seu imóvel que seja relevante para a sua venda."></textarea>
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior9" type="button">Anterior</button>
@@ -217,8 +263,25 @@
                 </div>
                 <div id="form11" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">Valor</h3>
-                    <label class="anunciar__conteudo-titulo">Digite o valor que deseja vender seu imóvel</label>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-thin fa-tags"></i>
+                    </div>
+                    <p>Digite o valor que deseja vender seu imóvel</p>
                     <input class="anunciar__conteudo__input" type="text" name="valor" placeholder="200000,00">
+                    <div class="anunciar__conteudo__botao">
+                        <button class="anunciar__conteudo__botao-anterior anterior10" type="button">Anterior</button>
+                        <button class="anunciar__conteudo__botao-proximo proximo11" type="button">Próximo</button>
+                    </div>
+                </div>
+                <div id="form11" class="anunciar__conteudo__box" >
+                    <h3 class="titulo__terciario">A melhor foto</h3>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <label for="imovelImagem">
+                            <i class="fa-thin fa-image fa-shake"></i>
+                        </label>
+                    </div>
+                    <p>Envie a melhor foto que você possui do seu imóvel</p>
+                    <input class="anunciar__conteudo__input hidden" type="file" accept="image/jpg, image/jpeg, image/png" id="imovelImagem"name="imovelImagem">
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior10" type="button">Anterior</button>
                         <button class="anunciar__conteudo__botao-proximo proximo11" type="button">Próximo</button>
@@ -226,13 +289,16 @@
                 </div>
                 <div id="form12" class="anunciar__conteudo__box" >
                     <h3 class="titulo__terciario">Deseja confirmar o seu anuncios?</h3>
+                    <div class="anunciar__conteudo__box__animacao">
+                        <i class="fa-sharp fa-thin fa-question fa-fade"></i>
+                    </div>
                     <div class="anunciar__conteudo__botao">
                         <button class="anunciar__conteudo__botao-anterior anterior11" type="button">Anterior</button>
                         <button class="anunciar__conteudo__botao-proximo proximo12" type="button">Próximo</button>
                     </div>
                 </div>
                 <div id="form13" class="anunciar__conteudo__box" >
-                    <h3 class="titulo__terciario"></h3>
+                    <h3 class="titulo__terciario">Parabéns! Seu anuncio foi criado</h3>
                     <div class="anunciar__conteudo__box__imagem">
                         <img src="./img/imagem/congrat.gif" alt="Parabéns">
                     </div>
@@ -363,6 +429,11 @@
                 <div class="meusdados__container__conteudo">
                     <label>Estado:</label>
                     <input name="uf" type="text" id="meusdadosUf" />
+                </div>
+                <div class="anuncio__card__botao">
+                    <button type="submit">
+                        <span>Salvar alterações</span>
+                    </button>
                 </div>
             </form>
         </section>

@@ -31,17 +31,37 @@
     z-index: 2;
     padding-bottom: 1em;
 }
-.lista-menu__titulo{
+.btn-submenu > span, .btn-download > span{
     font-weight: 700;
     margin: 1em 0 0.25em 0;
 }
-.lista-menu__titulo i{
+.btn-submenu i, .btn-download i{
     margin-left: 0.5em;
 }
-.lista-menu__titulo, .lista-menu__item{
+
+.btn-submenu, .btn-download, .lista-menu__item{
     padding: 0.75em 1em;
     font-size: 0.75em;
+    cursor: pointer;
 }
+.lista-menu__sublista-categoria, .lista-menu__sublista-download{
+    text-transform: uppercase;
+    background-color: white;
+    width: 50vw;
+    margin-top: 16px;
+    z-index: 2;
+    padding-bottom: 1em;
+}
+.lista-menu__sublista-item{
+    display: flex;
+    align-items: center;
+    padding: 0.75em 1em;
+}
+.lista-menu__sublista-item > a{
+    text-decoration: none;
+    color: var(--cor-font-principal);
+}
+
 #menu:checked ~ .lista-menu{
     display: block;
 }
